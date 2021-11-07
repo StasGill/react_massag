@@ -1,0 +1,62 @@
+.contacts-container {
+  width: 100%;
+
+  .contacts-panel {
+    max-width: 1140px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    h2 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    img {
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+  }
+  .contacts-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: #777;
+    font-family: "PT Serif", serif;
+    font-weight: Bold;
+    &_container {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    svg {
+      margin-bottom: 20px;
+      fill: grey;
+      width: 50px;
+      height: 50px;
+    }
+    button {
+      margin-left: 0;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+}

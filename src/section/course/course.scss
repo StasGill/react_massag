@@ -1,0 +1,61 @@
+.coursePanel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  img {
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+  .course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+
+    .course-card {
+      margin: 15px 25px;
+      width: 320px;
+      box-sizing: border-box;
+      background-color: white;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      img {
+        width: 320px;
+        border-radius: 10px 10px 0 0;
+      }
+      h3 {
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #777;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: Bold;
+        margin-bottom: 10px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+      button {
+        margin-left: 0;
+      }
+    }
+  }
+}
