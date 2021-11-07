@@ -1,5 +1,6 @@
-import mainImage from "../../assets/main5.png";
+import mainImage from "../../assets/main10-min.png";
 import Header from "../../components/header/Header";
+import { Heading } from "../../components/heading/Heading";
 import "./mainSection.scss";
 
 export function MainSection() {
@@ -7,9 +8,12 @@ export function MainSection() {
     <div className="gradient">
       <div className="main-container">
         <Header />
+
         <div className="mainPanel">
           <div className="leftPanel">
-            <h1>София Дорошенко</h1>
+            <Heading text="София Дорошенко" />
+            {/* <h1>София Дорошенко</h1> */}
+
             <ul>
               <li>Эксперт по эстетике лица и тела</li>
               <li>Массажист-эстетист</li>

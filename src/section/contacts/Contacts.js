@@ -12,14 +12,14 @@ export function Contacts() {
         <div className="contacts-card_container">
           <div className="contacts-card">
             <Phone />
-            +38067777-777-7
+            +38067-777-777-7
             <button>
               <a href="tel:+380677777777">Позвонить</a>
             </button>
           </div>
           <div className="contacts-card">
             <Instagram />
-            @sony4kadorochenko
+            @sone4kadoroshenko_kh
             <button>
               <a
                 href="https://www.instagram.com/sone4kadoroshenko_kh/"

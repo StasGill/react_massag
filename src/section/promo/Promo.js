@@ -7,6 +7,7 @@ export const Promo = () => {
     <div className="grey-background">
       <div className="container promo" id="teip">
         <Heading text="Курс «Тейпирование лица не выходя из дома»" />
+
         <div className="panel-container">
           <div className="left-panel">
             <img src={taip} alt="face"></img>

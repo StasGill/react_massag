@@ -11,8 +11,8 @@
 .gradient {
   background: linear-gradient(
     90deg,
-    rgba(247, 215, 252, 0.541) 0%,
-    rgba(255, 255, 255, 0.5) 50%,
+    rgb(247, 215, 252) 0%,
+    rgb(255, 255, 255) 50%,
     rgba(255, 255, 255, 1) 100%
   );
 }
@@ -46,4 +46,15 @@
       transition: all 0.3s;
     }
   }
+}
+
+.fadeIn {
+  //margin-top: -40px;
+  transform: scale(1.05, 1.05);
+  transition: all 0.5s ease-out;
+}
+.fadeOut {
+  //margin-top: 40px;
+  transform: scale(1.05, 1.05);
+  transition: all 0.5s ease-out;
 }

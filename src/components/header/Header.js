@@ -8,10 +8,11 @@ function Header() {
   const [isVisible, setVisible] = useState(false);
   return (
     <>
-      <div className="container">
+      <div>
         <nav className="header">
           <div className="logo">
             <LotusIcon />
+            <p>SD</p>
           </div>
           <ul className="navigation">
             <li>

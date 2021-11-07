@@ -6,7 +6,7 @@ export const CloseIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     width="22"
     height="32"
-    fill="white"
+    fill="#777"
     viewBox="0 0 32 32"
   >
     <title>cross</title>

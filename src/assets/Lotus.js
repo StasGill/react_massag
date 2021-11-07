@@ -8,9 +8,10 @@ export const LotusIcon = () => (
     x="px"
     y="0px"
     viewBox="0 0 512.001 512.001"
-    width="32"
-    height="32"
-    fill="white"
+    width="35"
+    height="35"
+    fill="#777"
+    stroke="#777"
   >
     <g>
       <g>

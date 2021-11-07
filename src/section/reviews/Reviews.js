@@ -8,7 +8,13 @@ export const Reviews = () => {
     <div className="grey-background">
       <div className="container promo" id="review">
         <Heading text="Отзывы моих клиентов" />
-        <Carousel autoPlay infiniteLoop emulateTouch interval={5000} showArrows>
+        <Carousel
+          autoPlay
+          infiniteLoop
+          interval={5000}
+          showArrows
+          swipeable={false}
+        >
           <div className="promo-card">
             <div className="promo-card_left">
               <img
