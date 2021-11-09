@@ -47,7 +47,7 @@
         transition: all 0.5s;
       }
     }
-    @media only screen and (max-width: 568px) {
+    @media only screen and (max-width: 820px) {
       display: none;
     }
   }
@@ -57,8 +57,10 @@
   height: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #ffe0dbf8;
   z-index: 3;
+
   ul {
     list-style: none;
     color: white;
@@ -101,7 +103,7 @@
   img {
     width: 30px;
   }
-  @media only screen and (max-width: 568px) {
+  @media only screen and (max-width: 820px) {
     display: block;
     opacity: 1;
   }

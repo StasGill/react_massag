@@ -12,9 +12,9 @@ export function Contacts() {
         <div className="contacts-card_container">
           <div className="contacts-card">
             <Phone />
-            +38067-777-777-7
+            +38063-416-105-7
             <button>
-              <a href="tel:+380677777777">Позвонить</a>
+              <a href="tel:+380634161057">Позвонить</a>
             </button>
           </div>
           <div className="contacts-card">

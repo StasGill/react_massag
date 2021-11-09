@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import { CloseIcon } from "../../assets/CloseIcon";
 import { BurgerMenu } from "../burgerMenu/BurgerMenu";
-import { LotusIcon } from "../../assets/Lotus";
+import logo from "../../assets/logo2.png";
 
 function Header() {
   const [isVisible, setVisible] = useState(false);
@@ -11,15 +11,14 @@ function Header() {
       <div>
         <nav className="header">
           <div className="logo">
-            <LotusIcon />
-            <p>SD</p>
+            <img src={logo} alt="logo" width="130px"></img>
           </div>
           <ul className="navigation">
             <li>
               <a href="#teip">Тейпирование лица</a>
             </li>
             <li>
-              <a href="#course">Все Курсы</a>
+              <a href="#consultation">Онлайн консультация</a>
             </li>
             <li>
               <a href="#review">Отзывы</a>
@@ -32,28 +31,28 @@ function Header() {
             <BurgerMenu />
           </div>
         </nav>
-        {isVisible && (
-          <div className="burger-menu">
-            <div className="close-icon" onClick={() => setVisible(false)}>
-              <CloseIcon />
-            </div>
-            <ul className="burger-navigation">
-              <li onClick={() => setVisible(false)}>
-                <a href="#teip">Тейпирование лица</a>
-              </li>
-              <li onClick={() => setVisible(false)}>
-                <a href="#course">Все Курсы</a>
-              </li>
-              <li onClick={() => setVisible(false)}>
-                <a href="#review">Отзывы</a>
-              </li>
-              <li onClick={() => setVisible(false)}>
-                <a href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        )}
       </div>
+      {isVisible && (
+        <div className="burger-menu">
+          <div className="close-icon" onClick={() => setVisible(false)}>
+            <CloseIcon />
+          </div>
+          <ul className="burger-navigation">
+            <li onClick={() => setVisible(false)}>
+              <a href="#teip">Тейпирование лица</a>
+            </li>
+            <li onClick={() => setVisible(false)}>
+              <a href="#consultation">Онлайн консультация</a>
+            </li>
+            <li onClick={() => setVisible(false)}>
+              <a href="#review">Отзывы</a>
+            </li>
+            <li onClick={() => setVisible(false)}>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </>
   );
 }
