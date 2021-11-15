@@ -5,6 +5,7 @@ import { Promo } from "../section/promo/Promo";
 import { Reviews } from "../section/reviews/Reviews";
 import { Footer } from "../section/footer/Footer";
 import { PromoTwo } from "../section/promoTwo/Promo";
+import { PromoThree } from "../section/promoThree/Promo";
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <MainSection />
       <Promo />
       <PromoTwo />
+      <PromoThree />
       <Reviews />
       <Contacts />
       <Footer />

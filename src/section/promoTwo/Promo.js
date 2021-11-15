@@ -1,8 +1,11 @@
+import React, { useState } from "react";
 import promo2 from "../../assets/promo2.jpg";
 import { Heading } from "../../components/heading/Heading";
+import { Modal } from "../../components/modal/Modal";
 import "./Promo.scss";
 
 export const PromoTwo = () => {
+  const [isActive, onClose] = useState(false);
   return (
     <div className="gradient">
       <div className="container promoTwo" id="consultation">
@@ -34,20 +37,21 @@ export const PromoTwo = () => {
               <li>Длительность консультации 80 минут.</li>
               <li>Стоимость 600 грн.</li>
             </ul>
-            <button>
-              <a
+            <button onClick={() => onClose(true)}>
+              {/* <a
                 href="https://next.privat24.ua/"
                 target="_blank"
                 rel="noreferrer"
-              >
-                Купить консультацию
-              </a>
+              > */}
+              Купить консультацию
+              {/* </a> */}
             </button>
           </div>
           <div className="left-panel">
             <img src={promo2} alt="face"></img>
           </div>
         </div>
+        <Modal isActive={isActive} onClose={onClose} />
       </div>
     </div>
   );

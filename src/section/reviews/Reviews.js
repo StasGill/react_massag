@@ -5,10 +5,11 @@ import { Heading } from "../../components/heading/Heading";
 import client1 from "../../assets/client1.jpg";
 import client2 from "../../assets/client2.jpg";
 import client3 from "../../assets/client3.jpg";
+import client4 from "../../assets/client4.png";
 
 export const Reviews = () => {
   return (
-    <div className="grey-background">
+    <div className="gradient">
       <div className="container promo" id="review">
         <Heading text="Отзывы моих клиентов" />
         <Carousel
@@ -20,13 +21,27 @@ export const Reviews = () => {
         >
           <div className="promo-card">
             <div className="promo-card_left">
+              <img src={client3} alt="woman" />
+            </div>
+            <div className="promo-card_right">
+              <h3>Анастасия Г.</h3>
+              <p>
+                Из-за активной мимики начались заломы на лбу. Стал вопрос об
+                инекциях либо альтернативном методе борьбы с заломами. Выбор пал
+                на комплексное моделирования лица с помошью тейпов у Софии.
+                Прошла курс, очень довольна результатом!
+              </p>
+            </div>
+          </div>
+          <div className="promo-card">
+            <div className="promo-card_left">
               <img src={client1} alt="woman" />
             </div>
             <div className="promo-card_right">
               <h3>Галина Т.</h3>
               <p>
-                Из за неправильного дыхания, больших нагрузок, активной мимики и
-                возрастрых моментов начала замечать некоторые особенности,
+                Из-за неправильного дыхания, больших нагрузок, активной мимики и
+                возрастных моментов начала замечать некоторые особенности,
                 которые мне не нравятся и я отказываюсь у себя их принимать!
                 Поэтому я пришла по рекомендации знакомой к Софии Дорошенко на
                 курс массажа моделирования лица.
@@ -45,21 +60,19 @@ export const Reviews = () => {
                 сняла тейпы и лицо как будто отдохнувшее! Напряжение во лбу нет,
                 ну не волшебсто ли? Что же будет когда пройду весь курс? Теперь
                 хочу с осанкой поработать тейпами! Спасибо Софии большое что
-                провели меня в мир расслабленного лба, я в восторге!
+                провела меня в мир расслабленного лба, я в восторге!
               </p>
             </div>
           </div>
           <div className="promo-card">
             <div className="promo-card_left">
-              <img src={client3} alt="woman" />
+              <img src={client4} alt="woman" />
             </div>
             <div className="promo-card_right">
-              <h3>Анастасия Г.</h3>
+              <h3>Алина Б.</h3>
               <p>
-                Из за активной мимики начались заломы на лбу. Стал вопрос об
-                инекциях либо альтернативном методе борьбы с заломами. Выбор пал
-                на комплексное моделирования лица с помошью тейпов у Софии.
-                Прошла курс очень довольна результатом!
+                С утра сняла тейпы и сразу же увидела результат! Как же они
+                круто работали пока я спала!
               </p>
             </div>
           </div>

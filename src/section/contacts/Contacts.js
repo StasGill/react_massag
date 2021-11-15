@@ -6,7 +6,7 @@ import { Heading } from "../../components/heading/Heading";
 
 export function Contacts() {
   return (
-    <div className="contacts-container gradient">
+    <div className="contacts-container grey-background">
       <div className="contacts-panel" id="contacts">
         <Heading text="Контакты" />
         <div className="contacts-card_container">

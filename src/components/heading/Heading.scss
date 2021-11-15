@@ -7,11 +7,17 @@
     font-family: "Playfair Display", serif;
     font-weight: 500;
     font-size: 48px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+
+    margin: 15px 10px;
     transition: all 1s ease-out;
+    @media only screen and (max-width: 598px) {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: 476px) {
+      font-size: 30px;
+    }
   }
 }
 .fadeIn {
-  margin-top: -10px;
+  margin-top: -15px;
 }

@@ -5,9 +5,6 @@
 // font-family: 'Ubuntu', sans-serif;
 // font-family: 'PT Serif', serif;
 
-.main {
-  // height: 100vh;
-}
 .gradient {
   background: linear-gradient(
     90deg,
@@ -25,7 +22,8 @@
   margin: 0 auto;
   padding: 20px;
   @media only screen and (max-width: 568px) {
-    padding: 5px;
+    // padding: 20px 5px;
+    padding-bottom: 5px;
   }
 
   button {

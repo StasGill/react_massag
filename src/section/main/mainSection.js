@@ -1,6 +1,7 @@
 import mainImage from "../../assets/main10-min.png";
 import Header from "../../components/header/Header";
 import { Heading } from "../../components/heading/Heading";
+
 import "./mainSection.scss";
 
 export function MainSection() {
@@ -12,7 +13,6 @@ export function MainSection() {
         <div className="mainPanel">
           <div className="leftPanel">
             <Heading text="София Дорошенко" />
-            {/* <h1>София Дорошенко</h1> */}
 
             <ul>
               <li>Эксперт по эстетике лица и тела</li>

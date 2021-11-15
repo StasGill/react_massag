@@ -40,6 +40,9 @@
       justify-content: center;
       flex-wrap: wrap;
     }
+    @media only screen and (max-width: 510px) {
+      width: 100%;
+    }
 
     svg {
       margin-bottom: 20px;
@@ -49,6 +52,9 @@
     }
     button {
       margin-left: 0;
+      @media only screen and (max-width: 510px) {
+        width: 100%;
+      }
     }
     a {
       color: white;

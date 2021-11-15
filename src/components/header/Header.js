@@ -21,6 +21,9 @@ function Header() {
               <a href="#consultation">Онлайн консультация</a>
             </li>
             <li>
+              <a href="#limfa">Марафон</a>
+            </li>
+            <li>
               <a href="#review">Отзывы</a>
             </li>
             <li>
@@ -43,6 +46,9 @@ function Header() {
             </li>
             <li onClick={() => setVisible(false)}>
               <a href="#consultation">Онлайн консультация</a>
+            </li>
+            <li>
+              <a href="#limfa">Марафон</a>
             </li>
             <li onClick={() => setVisible(false)}>
               <a href="#review">Отзывы</a>
