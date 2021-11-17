@@ -33,11 +33,11 @@ export const Modal = ({ isActive, onClose, type }) => {
 
     const formData = JSON.stringify(state);
 
-    let url = [botString + formData];
+    let url = botString + formData + "/";
     axios({
       method: "post",
-      url: url + "?nocache=" + new Date().getTime(), // Safari fix
-      withCredentials: true,
+      url: url, // Safari fix
+      withCredentials: false,
     })
       .then((response) => {
         console.log(response);
@@ -45,6 +45,20 @@ export const Modal = ({ isActive, onClose, type }) => {
       .catch((error) => {
         console.log(error);
       });
+
+    // fetch(url, {
+    //   method: "POST", // *GET, POST, PUT, DELETE, etc.
+    //   mode: "cors", // no-cors, *cors, same-origin
+    //   cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    //   credentials: "same-origin", // include, *same-origin, omit
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     // 'Content-Type': 'application/x-www-form-urlencoded',
+    //   },
+    //   redirect: "follow", // manual, *follow, error
+    //   referrerPolicy: "no-referrer", // no-referrer, *client
+    //   // body data type must match "Content-Type" header
+    // });
 
     if (type === 4) {
       window.location.href = four;
