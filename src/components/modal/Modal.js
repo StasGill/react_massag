@@ -33,13 +33,25 @@ export const Modal = ({ isActive, onClose, type }) => {
 
     const formData = JSON.stringify(state);
 
-    axios
-      .post(botString + formData)
-      .then(function (response) {
-        onClose(false);
+    // axios
+    //   .post(botString + formData)
+    //   .then(function (response) {
+    //     onClose(false);
+    //   })
+    //   .catch(function (error) {
+    //     onClose(false);
+    //   });
+
+    axios({
+      method: "post",
+      url: botString + formData + "?nocache=" + new Date().getTime(), // Safari fix
+      withCredentials: true,
+    })
+      .then((response) => {
+        console.log(response);
       })
-      .catch(function (error) {
-        onClose(false);
+      .catch((error) => {
+        console.log(error);
       });
 
     if (type === 4) {
