@@ -28,13 +28,13 @@ export const Modal = ({ isActive, onClose, type }) => {
   const six =
     "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI2MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=yna//8AXSkdKVU0HSH8tOb8yNCU=";
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
 
     const formData = JSON.stringify(state);
 
     let url = botString + formData + "/";
-    axios({
+    await axios({
       method: "post",
       url: url, // Safari fix
       withCredentials: false,
