@@ -37,21 +37,13 @@ export const PromoTwo = () => {
               <li>Длительность консультации 80 минут.</li>
               <li>Стоимость 600 грн.</li>
             </ul>
-            <button onClick={() => onClose(true)}>
-              {/* <a
-                href="https://next.privat24.ua/"
-                target="_blank"
-                rel="noreferrer"
-              > */}
-              Купить консультацию
-              {/* </a> */}
-            </button>
+            <button onClick={() => onClose(true)}>Купить консультацию</button>
           </div>
           <div className="left-panel">
             <img src={promo2} alt="face"></img>
           </div>
         </div>
-        <Modal isActive={isActive} onClose={onClose} />
+        <Modal isActive={isActive} onClose={onClose} type={6} />
       </div>
     </div>
   );

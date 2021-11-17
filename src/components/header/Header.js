@@ -48,7 +48,9 @@ function Header() {
               <a href="#consultation">Онлайн консультация</a>
             </li>
             <li>
-              <a href="#limfa">Марафон</a>
+              <a href="#limfa" onClick={() => setVisible(false)}>
+                Марафон
+              </a>
             </li>
             <li onClick={() => setVisible(false)}>
               <a href="#review">Отзывы</a>

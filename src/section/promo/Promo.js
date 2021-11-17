@@ -39,19 +39,11 @@ export const Promo = () => {
               <li>Длительность 20 дней.</li>
               <li>Стоимость 800 грн.</li>
             </ul>
-            <button onClick={() => onClose(true)}>
-              {/* <a
-                href="https://next.privat24.ua/"
-                target="_blank"
-                rel="noreferrer"
-              > */}
-              Купить курс
-              {/* </a> */}
-            </button>
+            <button onClick={() => onClose(true)}>Купить курс</button>
           </div>
         </div>
       </div>
-      <Modal isActive={isActive} onClose={onClose} />
+      <Modal isActive={isActive} onClose={onClose} type={8} />
     </div>
   );
 };

@@ -20,12 +20,12 @@ export const PromoThree = () => {
           </div>
           <div className="right-panel">
             <ul>
-              <li>
+              <li className="no-style">
                 Марафон будет проводится в закрытом инстаграм аккаунте. Вы
                 получаете постоянный доступ к материалам,прямым эфирам и всем
                 обучающим видео.
               </li>
-              <li>Напротяжении 7ми дней вы научитесь:</li>
+              <li className="no-style">Напротяжении 7ми дней вы научитесь:</li>
               <li>
                 Делать противоотечную утреннюю зарядку,которая займёт всего 7
                 минут.
@@ -48,19 +48,11 @@ export const PromoThree = () => {
               <li>Длительность 7 дней.</li>
               <li>Стоимость 400 грн.</li>
             </ul>
-            <button onClick={() => onClose(true)}>
-              {/* <a
-                href="https://next.privat24.ua/"
-                target="_blank"
-                rel="noreferrer"
-              > */}
-              Купить марафон
-              {/* </a> */}
-            </button>
+            <button onClick={() => onClose(true)}>Купить марафон</button>
           </div>
         </div>
       </div>
-      <Modal isActive={isActive} onClose={onClose} />
+      <Modal isActive={isActive} onClose={onClose} type={4} />
     </div>
   );
 };

@@ -14,16 +14,25 @@ const formMock = {
 const botString =
   "https://api.telegram.org/bot2122968394:AAHelbnAiWlrq38ZeL76X3EyDBa2YYYf2Ck/sendMessage?chat_id=-658538158&text=";
 
-export const Modal = ({ isActive, onClose }) => {
+export const Modal = ({ isActive, onClose, type }) => {
   const [state, setState] = useState(formMock);
 
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.value });
   };
 
+  const four =
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=iT879ZVNDJAraqzydnAfgjTZ6EE=";
+  const eigth =
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI4MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=iEuMhyU5VPkkVFKZblRPZ/BjkEk=";
+  const six =
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI2MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=yna//8AXSkdKVU0HSH8tOb8yNCU=";
+
   const onSubmit = (e) => {
     e.preventDefault();
+
     const formData = JSON.stringify(state);
+
     axios
       .post(botString + formData)
       .then(function (response) {
@@ -32,6 +41,18 @@ export const Modal = ({ isActive, onClose }) => {
       .catch(function (error) {
         onClose(false);
       });
+
+    if (type === 4) {
+      window.location.href = four;
+    }
+
+    if (type === 8) {
+      window.location.href = eigth;
+    }
+
+    if (type === 6) {
+      window.location.href = six;
+    }
   };
   return (
     <>
@@ -66,7 +87,7 @@ export const Modal = ({ isActive, onClose }) => {
               <p>Номер телефона</p>
               <input
                 name="phone"
-                type="number"
+                type="tel"
                 required
                 maxLength="30"
                 onChange={handleChange}
@@ -79,15 +100,7 @@ export const Modal = ({ isActive, onClose }) => {
                 onChange={handleChange}
                 value={state.instagram}
               ></input>
-              <button type="submit">
-                {/* <a
-                  href="https://next.privat24.ua/"
-                  target="_blank"
-                  rel="noreferrer"
-                > */}
-                Оплатить
-                {/* </a> */}
-              </button>
+              <button type="submit">Оплатить</button>
             </form>
           </div>
         </div>

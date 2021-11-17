@@ -57,7 +57,10 @@
         color: #777;
         font-family: "PT Serif", serif;
         font-weight: Bold;
-        //padding-left: 17px;
+
+        .no-style {
+          list-style: none;
+        }
         @media only screen and (max-width: 800px) {
           padding-left: 10px;
         }

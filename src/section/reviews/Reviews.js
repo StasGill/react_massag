@@ -6,6 +6,7 @@ import client1 from "../../assets/client1.jpg";
 import client2 from "../../assets/client2.jpg";
 import client3 from "../../assets/client3.jpg";
 import client4 from "../../assets/client4.png";
+import client5 from "../../assets/client5.png";
 
 export const Reviews = () => {
   return (
@@ -71,8 +72,20 @@ export const Reviews = () => {
             <div className="promo-card_right">
               <h3>Алина Б.</h3>
               <p>
-                С утра сняла тейпы и сразу же увидела результат! Как же они
-                круто работали пока я спала!
+                Я зранку зняла тейпи і вже побачила результат. Як же вони круто
+                працювали поки я спала!
+              </p>
+            </div>
+          </div>
+          <div className="promo-card">
+            <div className="promo-card_left">
+              <img src={client5} alt="woman" />
+            </div>
+            <div className="promo-card_right">
+              <h3>Вероника П.</h3>
+              <p>
+                Эфект после тейпов понравился. Залом разгладился. Думаю что
+                нужно будет пробовать и дальше клеить.
               </p>
             </div>
           </div>
