@@ -37,7 +37,9 @@ export const PromoTwo = () => {
               <li>Длительность консультации 80 минут.</li>
               <li>Стоимость 600 грн.</li>
             </ul>
-            <button onClick={() => onClose(true)}>Купить консультацию</button>
+            <button onClick={() => onClose(true)}>
+              Записаться на консультацию
+            </button>
           </div>
           <div className="left-panel">
             <img src={promo2} alt="face"></img>

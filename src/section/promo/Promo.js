@@ -39,7 +39,7 @@ export const Promo = () => {
               <li>Длительность 20 дней.</li>
               <li>Стоимость 800 грн.</li>
             </ul>
-            <button onClick={() => onClose(true)}>Купить курс</button>
+            <button onClick={() => onClose(true)}>Записаться на курс</button>
           </div>
         </div>
       </div>

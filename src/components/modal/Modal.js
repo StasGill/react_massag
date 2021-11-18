@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import headerImage from "../../assets/underH.png";
 import { CloseIcon } from "../../assets/CloseIcon";
 import "./Modal.scss";
@@ -16,7 +16,21 @@ const botString =
 
 export const Modal = ({ isActive, onClose, type }) => {
   const [state, setState] = useState(formMock);
+  const [cost, setCost] = useState("400 грн.");
 
+  useEffect(() => {
+    if (type === 4) {
+      setCost(" 400 грн.");
+    }
+
+    if (type === 8) {
+      setCost(" 800 грн.");
+    }
+
+    if (type === 6) {
+      setCost(" 600 грн.");
+    }
+  }, [type]);
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.value });
   };
@@ -45,20 +59,6 @@ export const Modal = ({ isActive, onClose, type }) => {
       .catch((error) => {
         console.log(error);
       });
-
-    // fetch(url, {
-    //   method: "POST", // *GET, POST, PUT, DELETE, etc.
-    //   mode: "cors", // no-cors, *cors, same-origin
-    //   cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    //   credentials: "same-origin", // include, *same-origin, omit
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     // 'Content-Type': 'application/x-www-form-urlencoded',
-    //   },
-    //   redirect: "follow", // manual, *follow, error
-    //   referrerPolicy: "no-referrer", // no-referrer, *client
-    //   // body data type must match "Content-Type" header
-    // });
 
     if (type === 4) {
       window.location.href = four;
@@ -118,7 +118,7 @@ export const Modal = ({ isActive, onClose, type }) => {
                 onChange={handleChange}
                 value={state.instagram}
               ></input>
-              <button type="submit">Оплатить</button>
+              <button type="submit">Оплатить {cost}</button>
             </form>
           </div>
         </div>
