@@ -28,7 +28,7 @@ export function MainSection() {
               </li>
             </ul>
             <button>
-              <a href="#consultation">Записатся на консультацию</a>
+              <a href="#consultation">Записаться на консультацию</a>
             </button>
           </div>
           <div className="rigthPanel">
