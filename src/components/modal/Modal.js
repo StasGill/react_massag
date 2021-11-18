@@ -36,11 +36,13 @@ export const Modal = ({ isActive, onClose, type }) => {
   };
 
   const four =
-    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=iT879ZVNDJAraqzydnAfgjTZ6EE=";
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5IjoiaTg2MjMyNzYyNjAxIiwibGFuZ3VhZ2UiOiJydSJ9&signature=QdJouqESe9BOH0QwmRDXQ5cwXZc=";
+
   const eigth =
-    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI4MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=iEuMhyU5VPkkVFKZblRPZ/BjkEk=";
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI4MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5IjoiaTg2MjMyNzYyNjAxIiwibGFuZ3VhZ2UiOiJydSJ9&signature=tGBUEh5Q7A7AomhWb4Q9VV6d874=";
+
   const six =
-    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI2MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5Ijoic2FuZGJveF9pOTQ5OTk0OTQzNTciLCJsYW5ndWFnZSI6InJ1In0=&signature=yna//8AXSkdKVU0HSH8tOb8yNCU=";
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI2MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5IjoiaTg2MjMyNzYyNjAxIiwibGFuZ3VhZ2UiOiJydSJ9&signature=LiZkQUIRaIhKwzY3ZYKYnP961BA=";
 
   const onSubmit = async (e) => {
     e.preventDefault();
