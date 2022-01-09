@@ -46,9 +46,9 @@ export const PromoThree = () => {
               </li>
 
               <li>Длительность 7 дней.</li>
-              <li>Стоимость 400 грн.</li>
+              <li>Стоимость 300 грн.</li>
             </ul>
-            <button onClick={() => onClose(true)}>Записаться на марафон</button>
+            <button onClick={() => onClose(true)}>Купить в записи</button>
           </div>
         </div>
       </div>

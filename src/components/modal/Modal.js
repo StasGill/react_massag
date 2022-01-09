@@ -20,7 +20,7 @@ export const Modal = ({ isActive, onClose, type }) => {
 
   useEffect(() => {
     if (type === 4) {
-      setCost(" 400 грн.");
+      setCost(" 300 грн.");
     }
 
     if (type === 8) {
@@ -36,7 +36,7 @@ export const Modal = ({ isActive, onClose, type }) => {
   };
 
   const four =
-    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5IjoiaTg2MjMyNzYyNjAxIiwibGFuZ3VhZ2UiOiJydSJ9&signature=QdJouqESe9BOH0QwmRDXQ5cwXZc=";
+    "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIzMDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5IjoiaTg2MjMyNzYyNjAxIiwibGFuZ3VhZ2UiOiJydSJ9&signature=OrxWtQlxFOmA53wl99hEoeL46TA=";
 
   const eigth =
     "https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI4MDAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzRltC5INGC0L7QstCw0YAiLCJwdWJsaWNfa2V5IjoiaTg2MjMyNzYyNjAxIiwibGFuZ3VhZ2UiOiJydSJ9&signature=tGBUEh5Q7A7AomhWb4Q9VV6d874=";
